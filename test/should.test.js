@@ -351,7 +351,7 @@ module.exports = {
  
     err(function(){
       user.should.have.property('pets').with.lengthOf(5);
-    }, "expected [ 'tobi', 'loki', 'jane', 'bandit' ] to have a length of 5 but got 4");
+    }, "{ name: 'tj',\n  pets: [ 'tobi', 'loki', 'jane', 'bandit' ] } should have property 'pets' with length of 5 but got 4"/*"expected [ 'tobi', 'loki', 'jane', 'bandit' ] to have a length of 5 but got 4"*/);
  
     user.should.be.a('object').and.have.property('name', 'tj');
   },
